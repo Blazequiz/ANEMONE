@@ -1,5 +1,8 @@
 @import "./base/reset";
+@import "./utils/variables";
+@import "./base/common";
 @import "./components/container";
+@import "./components/section-titles";
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/about";
