@@ -4,18 +4,40 @@
     flex-wrap: wrap;
     gap: 16px;
     margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      gap: 32px;
+    }
   }
   &-item {
     width: 136px;
+    @media screen and (min-width: 768px) {
+      width: 344px;
+    }
   }
   &-description {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 16px;
+    gap: 8px;
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: $main-color;
+      flex-grow: 1;
+    }
   }
   &-price {
     font-weight: 600;
     font-size: 12px;
     color: rgb(0, 0, 0, 60%);
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+    }
   }
   &-button {
     display: block;
@@ -28,5 +50,8 @@
     border: none;
     background-color: $accent-color;
     margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      padding: 20px 43px;
+    }
   }
 }

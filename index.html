@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>ANEMONE</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
-		<link rel="stylesheet" href="./css/main.min.css" />
-	</head>
 
-	<body>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ANEMONE</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+	<header>
 		<header class="header">
 			<div class="container">
-			<a href="./index" class="header-logo">
+				<a href="./index" class="header-logo">
 				<svg class="header-logo-icon" >
 					<use href="./images/symbol-defs.svg#icon-logo-mob"></use>
 				  </svg>
-			</a>
+				</a>
 				<ul class="header-nav-list">
 					<li class="header-nav-list-item">
 						<a href="#">Anemone</a>
@@ -35,10 +35,9 @@
 					<li class="header-nav-list-item">
 						<a href="#">Delivery</a>
 					</li>
-					<li class="header-nav-list-item">
+					<liЮЮ class="header-nav-list-item">
 						<a href="#">Blog</a>
 					</li>
-				   
 				</ul>
 				<button>
 					<svg class="header-tel-icon" >
@@ -52,6 +51,8 @@
 				</button>
 			</div>
 		</header>
+	</header>
+	<main>
 		<main>
 			<section class="hero"></section>
 			<section class="about"></section>
@@ -110,22 +111,33 @@
 						<span class="delivery-span">1</span> Choose your bouquet and make an
 						order on website
 					</li>
-					<li class="delivery-item">
-						<span class="delivery-span">2</span> Wait for the call to clarify
+					<li class="delivery__item">
+						<span class="delivery__span">2</span> Wait for the call to clarify
 						the details of the order. You can pay online or to the courier
 					</li>
-					<li class="delivery-item">
-						<span class="delivery-span">3</span> Wait for the delivery at the
+					<li class="delivery__item">
+						<span class="delivery__span">3</span> Wait for the delivery at the
 						selected time or pick up the order from the store
 					</li>
-					<li class="delivery-item">
-						<span class="delivery-span">4</span> Make someone happy or enjoy
+					<li class="delivery__item">
+						<span class="delivery__span">4</span> Make someone happy or enjoy
 						yourself
 					</li>
 				</ul>
-			</section>
-			<section class="blog"></section>
-		</main>
-		<footer></footer>
-	</body>
+				<picture>
+					<source
+						srcset="./images/delivery/desktop/delivery-1x.jpg 1x, ./images/delivery/desktop/delivery-2x.jpg 2x">
+					<source
+						srcset="./images/delivery/mobile/delivery-mobile-1x.jpg 1x, ./images/delivery/mobile/delivery-mobile-2x.jpg 2x">
+					<source
+						srcset="./images/delivery/tablet/delivery-tablet-1x.jpg 1x, ./images/delivery/tablet/delivery-tablet-2x.jpg 2x">
+					<img src="./images/delivery/desktop/delivery-1x.jpg" alt="" class="delivery__img">
+				</picture>
+			</div>
+		</section>
+		<section class="blog"></section>
+	</main>
+	<footer></footer>
+</body>
+
 </html>

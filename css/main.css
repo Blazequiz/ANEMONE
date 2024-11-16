@@ -78,17 +78,47 @@ body {
   gap: 16px;
   margin-bottom: 32px;
 }
+@media screen and (min-width: 768px) {
+  .store-list {
+    gap: 32px;
+  }
+}
 .store-item {
   width: 136px;
 }
+@media screen and (min-width: 768px) {
+  .store-item {
+    width: 344px;
+  }
+}
 .store-description {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 16px;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .store-description {
+    font-size: 32px;
+  }
+}
+.store-description::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #000000;
+  flex-grow: 1;
 }
 .store-price {
   font-weight: 600;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.6);
+}
+@media screen and (min-width: 768px) {
+  .store-price {
+    font-size: 24px;
+  }
 }
 .store-button {
   display: block;
@@ -101,4 +131,29 @@ body {
   border: none;
   background-color: #E86F54;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .store-button {
+    padding: 20px 43px;
+  }
+}
+
+.delivery__span {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  display: block;
+  border-radius: 100%;
+  border-radius: 1px;
+}
+.delivery__item {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+}
+.delivery__img {
+  width: 320px;
+  height: 135px;
 }/*# sourceMappingURL=main.css.map */
