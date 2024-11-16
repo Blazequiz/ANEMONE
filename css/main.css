@@ -110,7 +110,7 @@ body {
   color: #000;
   display: block;
   border-radius: 100%;
-  stroke-width: 1px;
+  border-radius: 1px;
 }
 .delivery__item {
   font-family: "Montserrat";
