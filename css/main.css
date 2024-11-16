@@ -27,7 +27,35 @@ input:focus, button:focus, textarea:focus, select:focus {
   outline: none;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #FFF;
+  color: #000000;
+}
+
 .container {
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 700;
+  font-size: 24px;
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 44px;
+    gap: 16px;
+  }
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #000000;
+  flex-grow: 1;
 }/*# sourceMappingURL=main.css.map */
