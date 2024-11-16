@@ -28,6 +28,38 @@ input:focus, button:focus, textarea:focus, select:focus {
 }
 
 .container {
-  padding: 0 15px;
+  width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+.delivery__span {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  display: block;
+  border-radius: 100%;
+  stroke-width: 1px;
+}
+.delivery__item {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+}
+.delivery__img {
+  width: 320px;
+  height: 135px;
 }/*# sourceMappingURL=main.css.map */
