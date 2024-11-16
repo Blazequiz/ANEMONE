@@ -36,8 +36,6 @@ body {
 .container {
   width: 320px;
   padding: 0 16px;
-<<<<<<< HEAD
-=======
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
@@ -102,19 +100,7 @@ body {
   border-radius: 38px;
   border: none;
   background-color: #E86F54;
->>>>>>> fabf6579383a1e00cf674ef9a2751b47975237c3
   margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding: 0 24px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-  }
 }
 
 .delivery__span {
