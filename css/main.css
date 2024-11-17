@@ -165,28 +165,29 @@ body {
   }
 }
 
-.delivery__item {
-  display: flex;
-  margin-bottom: 14px;
+.delivery {
+  padding-top: 60px;
 }
-.delivery__text {
-  max-width: 288px;
+.delivery__list {
+  margin-top: 32px;
+  padding: 26px;
 }
 .delivery__span {
   font-weight: 500;
   font-size: 20px;
   border-radius: 100%;
   border: 1px solid #000;
-  padding-top: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 8px;
+  max-width: 40px;
+  max-height: 40px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .delivery__item {
   font-weight: 500;
   font-size: 14px;
-}
-.delivery__img {
-  width: 320px;
-  height: 135px;
+  display: flex;
+  margin-bottom: 14px;
+  gap: 8px;
 }/*# sourceMappingURL=main.css.map */
