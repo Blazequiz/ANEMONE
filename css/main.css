@@ -77,6 +77,31 @@ body {
   flex-grow: 1;
 }
 
+.section-button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  padding: 10px 0px 10px 0px;
+  width: 208px;
+  border-radius: 38px;
+  background-color: #E86F54;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .section-button {
+    width: 280px;
+    font-size: 28px;
+    line-height: 86%;
+    padding: 20px 0px 20px 0px;
+  }
+}
+.section-button:hover {
+  background-color: #E25B41;
+}
+
 .header {
   padding-top: 16px;
   padding-bottom: 17px;
@@ -159,4 +184,110 @@ body {
 .header-burger-icon {
   width: 24px;
   height: 24px;
+}
+
+.about-title {
+  margin-bottom: 32px;
+  line-height: 29.26px;
+}
+
+.about-text {
+  margin-bottom: 16px;
+  width: 275px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+.store-title {
+  margin-bottom: 80px;
+}
+.store-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .store-list {
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+}
+.store-item {
+  width: 136px;
+}
+@media screen and (min-width: 768px) {
+  .store-item {
+    width: 344px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .store-item {
+    width: 600px;
+  }
+}
+.store-description {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .store-description {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .store-description {
+    font-size: 36px;
+  }
+}
+.store-description::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #000000;
+  flex-grow: 1;
+}
+.store-price {
+  font-weight: 600;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+@media screen and (min-width: 768px) {
+  .store-price {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .store-price {
+    font-size: 28px;
+  }
+}
+
+.delivery {
+  padding-top: 60px;
+}
+.delivery__list {
+  margin-top: 32px;
+}
+.delivery__item {
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  margin-bottom: 14px;
+  gap: 8px;
+}
+.delivery__span {
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 100%;
+  border: 1px solid #000;
+  max-width: 40px;
+  max-height: 40px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
