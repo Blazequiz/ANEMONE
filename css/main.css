@@ -171,12 +171,26 @@ body {
 .delivery__list {
   margin-top: 32px;
 }
+@media screen and (min-width: 768px) {
+  .delivery__list {
+    margin-bottom: 40px;
+  }
+}
 .delivery__item {
   font-weight: 500;
   font-size: 14px;
   display: flex;
   margin-bottom: 14px;
   gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .delivery__item {
+    font-size: 24px;
+    gap: 20px;
+    height: 64px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 }
 .delivery__span {
   font-weight: 500;
@@ -189,4 +203,14 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+@media screen and (min-width: 768px) {
+  .delivery__span {
+    max-width: 64px;
+    max-height: 64px;
+    height: 64px;
+  }
+}
+.delivery__img {
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */
