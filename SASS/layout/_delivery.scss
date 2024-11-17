@@ -3,9 +3,15 @@
 
     &__list {
         margin-top: 32px;
-        padding: 26px;
     }
 
+    &__item {
+        font-weight: 500;
+        font-size: 14px;
+        display: flex;
+        margin-bottom: 14px;
+        gap: 8px;
+    }
 
     &__span {
         font-weight: 500;
@@ -20,11 +26,7 @@
         display: flex;
     }
 
-    &__item {
-        font-weight: 500;
-        font-size: 14px;
-        display: flex;
-        margin-bottom: 14px;
-        gap: 8px;
+    &__img{
+        
     }
 }

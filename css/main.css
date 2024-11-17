@@ -170,7 +170,13 @@ body {
 }
 .delivery__list {
   margin-top: 32px;
-  padding: 26px;
+}
+.delivery__item {
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  margin-bottom: 14px;
+  gap: 8px;
 }
 .delivery__span {
   font-weight: 500;
@@ -183,11 +189,4 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-}
-.delivery__item {
-  font-weight: 500;
-  font-size: 14px;
-  display: flex;
-  margin-bottom: 14px;
-  gap: 8px;
 }/*# sourceMappingURL=main.css.map */
