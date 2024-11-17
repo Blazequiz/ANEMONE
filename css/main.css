@@ -72,6 +72,31 @@ body {
   flex-grow: 1;
 }
 
+.section-button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  padding: 10px 0px 10px 0px;
+  width: 208px;
+  border-radius: 38px;
+  background-color: #E86F54;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .section-button {
+    width: 280px;
+    font-size: 28px;
+    line-height: 86%;
+    padding: 20px 0px 20px 0px;
+  }
+}
+.section-button:hover {
+  background-color: #E25B41;
+}
+
 .store-title {
   margin-bottom: 80px;
 }
@@ -137,25 +162,6 @@ body {
 @media screen and (min-width: 1200px) {
   .store-price {
     font-size: 28px;
-  }
-}
-.store-button {
-  display: block;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 120%;
-  color: #FFFFFF;
-  padding: 10px 35px;
-  border-radius: 38px;
-  border: none;
-  background-color: #E86F54;
-  margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  .store-button {
-    padding: 20px 43px;
-    font-size: 28px;
-    line-height: 86%;
   }
 }
 
