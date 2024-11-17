@@ -1,24 +1,26 @@
 .delivery {
 
+    &__item {
+        display: flex;
+        margin-bottom: 14px;
+    }
+    &__text{
+        max-width: 288px;
+    }
     &__span {
-        font-family: 'Montserrat';
         font-weight: 500;
         font-size: 20px;
-        color: #000;
-        display: block;
         border-radius: 100%;
-<<<<<<< Updated upstream
-        stroke-width: 1px;
-=======
-        border-radius: 1px;
->>>>>>> Stashed changes
+        border: 1px solid #000;
+        padding-top: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 8px;
     }
 
-    &__item {
-        font-family: 'Montserrat';
+    &__item {    
         font-weight: 500;
         font-size: 14px;
-        color: #000;
     }
 
     &__img {
