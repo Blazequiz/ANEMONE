@@ -72,6 +72,9 @@ body {
   flex-grow: 1;
 }
 
+.store-title {
+  margin-bottom: 80px;
+}
 .store-list {
   display: flex;
   flex-wrap: wrap;
@@ -81,6 +84,7 @@ body {
 @media screen and (min-width: 768px) {
   .store-list {
     gap: 32px;
+    margin-bottom: 60px;
   }
 }
 .store-item {
@@ -89,6 +93,11 @@ body {
 @media screen and (min-width: 768px) {
   .store-item {
     width: 344px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .store-item {
+    width: 600px;
   }
 }
 .store-description {
@@ -101,6 +110,11 @@ body {
 @media screen and (min-width: 768px) {
   .store-description {
     font-size: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .store-description {
+    font-size: 36px;
   }
 }
 .store-description::after {
@@ -120,6 +134,11 @@ body {
     font-size: 24px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .store-price {
+    font-size: 28px;
+  }
+}
 .store-button {
   display: block;
   font-weight: 500;
@@ -135,6 +154,8 @@ body {
 @media screen and (min-width: 768px) {
   .store-button {
     padding: 20px 43px;
+    font-size: 28px;
+    line-height: 86%;
   }
 }
 

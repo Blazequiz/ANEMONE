@@ -1,4 +1,7 @@
 .store {
+  &-title {
+    margin-bottom: 80px;
+  }
   &-list {
     display: flex;
     flex-wrap: wrap;
@@ -6,12 +9,16 @@
     margin-bottom: 32px;
     @media screen and (min-width: 768px) {
       gap: 32px;
+      margin-bottom: 60px;
     }
   }
   &-item {
     width: 136px;
     @media screen and (min-width: 768px) {
       width: 344px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 600px;
     }
   }
   &-description {
@@ -22,6 +29,9 @@
     gap: 8px;
     @media screen and (min-width: 768px) {
       font-size: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
     }
     &::after {
       content: "";
@@ -38,6 +48,9 @@
     @media screen and (min-width: 768px) {
       font-size: 24px;
     }
+    @media screen and (min-width: 1200px) {
+      font-size: 28px;
+    }
   }
   &-button {
     display: block;
@@ -52,6 +65,8 @@
     margin: 0 auto;
     @media screen and (min-width: 768px) {
       padding: 20px 43px;
+      font-size: 28px;
+      line-height: 86%;
     }
   }
 }
