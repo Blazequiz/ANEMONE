@@ -1,11 +1,40 @@
 .delivery {
     padding-top: 60px;
 
-    &__list {
-        margin-top: 32px;
-        padding: 26px;
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+
+        @media screen and (min-width: 768px) {
+            font-weight: 700;
+            font-size: 44px;
+            margin-left: 24px;
+        }
     }
 
+    &__list {
+        margin-top: 32px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__item {
+        font-weight: 500;
+        font-size: 14px;
+        display: flex;
+        margin-bottom: 14px;
+        gap: 8px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+            gap: 20px;
+            height: 64px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    }
 
     &__span {
         font-weight: 500;
@@ -18,13 +47,22 @@
         justify-content: center;
         align-items: center;
         display: flex;
+
+        @media screen and (min-width: 768px) {
+            max-width: 64px;
+            max-height: 64px;
+            height: 64px;
+        }
     }
 
-    &__item {
-        font-weight: 500;
-        font-size: 14px;
-        display: flex;
-        margin-bottom: 14px;
-        gap: 8px;
+    &__img {
+
+        padding: 0;
+
+        @media screen and (min-width: 1280px) {
+            
+            width: 100%;
+            height: 391px;
+        }
     }
 }
