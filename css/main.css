@@ -120,7 +120,7 @@ body {
     width: 344px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .store-item {
     width: 600px;
   }
@@ -137,7 +137,7 @@ body {
     font-size: 32px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .store-description {
     font-size: 36px;
   }
@@ -159,7 +159,7 @@ body {
     font-size: 24px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .store-price {
     font-size: 28px;
   }
