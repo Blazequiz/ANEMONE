@@ -1,25 +1,30 @@
 .delivery {
+    padding-top: 60px;
+
+    &__list {
+        margin-top: 32px;
+        padding: 26px;
+    }
+
 
     &__span {
-        font-family: 'Montserrat';
         font-weight: 500;
         font-size: 20px;
-        color: #000;
-        display: block;
         border-radius: 100%;
-        stroke-width: 1px;
-        border-radius: 1px;
+        border: 1px solid #000;
+        max-width: 40px;
+        max-height: 40px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
 
     &__item {
-        font-family: 'Montserrat';
         font-weight: 500;
         font-size: 14px;
-        color: #000;
-    }
-
-    &__img {
-        width: 320px;
-        height: 135px;
+        display: flex;
+        margin-bottom: 14px;
+        gap: 8px;
     }
 }

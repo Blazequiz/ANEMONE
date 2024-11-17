@@ -165,23 +165,29 @@ body {
   }
 }
 
+.delivery {
+  padding-top: 60px;
+}
+.delivery__list {
+  margin-top: 32px;
+  padding: 26px;
+}
 .delivery__span {
-  font-family: "Montserrat";
   font-weight: 500;
   font-size: 20px;
-  color: #000;
-  display: block;
   border-radius: 100%;
-  stroke-width: 1px;
-  border-radius: 1px;
+  border: 1px solid #000;
+  max-width: 40px;
+  max-height: 40px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .delivery__item {
-  font-family: "Montserrat";
   font-weight: 500;
   font-size: 14px;
-  color: #000;
-}
-.delivery__img {
-  width: 320px;
-  height: 135px;
+  display: flex;
+  margin-bottom: 14px;
+  gap: 8px;
 }/*# sourceMappingURL=main.css.map */
