@@ -33,10 +33,15 @@ body {
   color: #000000;
 }
 
+.flex {
+  display: flex;
+}
+
 .container {
   width: 320px;
   padding: 0 16px;
   margin: 0 auto;
+  outline: 1px solid blue;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -70,4 +75,88 @@ body {
   height: 1px;
   background-color: #000000;
   flex-grow: 1;
+}
+
+.header {
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+.header-logo {
+  margin-right: 80px;
+}
+@media (min-width: 1280px) {
+  .header-logo {
+    margin-right: 261px;
+  }
+}
+.header-logo-icon {
+  width: 45px;
+  height: 35px;
+}
+@media (min-width: 768px) {
+  .header-logo-icon {
+    width: 72px;
+    height: 57px;
+  }
+}
+.header-nav-list {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}
+.header-nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+.header-btn-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  margin-left: auto;
+}
+.header-btn-menu {
+  margin-left: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+@media (min-width: 768px) {
+  .header-btn-menu {
+    display: none;
+  }
+}
+.header-tel-icon {
+  width: 22px;
+  height: 22px;
+}
+@media (min-width: 768px) {
+  .header-tel-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+.header-burger-icon {
+  width: 24px;
+  height: 24px;
 }/*# sourceMappingURL=main.css.map */
