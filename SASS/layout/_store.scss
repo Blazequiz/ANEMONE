@@ -1,32 +1,55 @@
 .store {
+  &-title {
+    margin-bottom: 80px;
+  }
   &-list {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      gap: 32px;
+      margin-bottom: 60px;
+    }
   }
   &-item {
     width: 136px;
+    @media screen and (min-width: 768px) {
+      width: 344px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 600px;
+    }
   }
   &-description {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 16px;
+    gap: 8px;
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 36px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: $main-color;
+      flex-grow: 1;
+    }
   }
   &-price {
     font-weight: 600;
     font-size: 12px;
     color: rgb(0, 0, 0, 60%);
-  }
-  &-button {
-    display: block;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
-    color: $secondary-color;
-    padding: 10px 35px;
-    border-radius: 38px;
-    border: none;
-    background-color: $accent-color;
-    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 28px;
+    }
   }
 }
