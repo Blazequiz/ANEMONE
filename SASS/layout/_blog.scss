@@ -1,0 +1,143 @@
+// .blog-section-title {
+//   position: relative; 
+//   font-weight: 700;
+//   font-size: 44px;
+//   color: #000; 
+// }
+
+// .blog-section-title::after {
+//   content: "";
+//   position: absolute; 
+//   top: 50%;
+//   height: 1px; 
+//   width: 100vw;
+//   background-color: #000;
+// }
+
+.blog img {
+    max-width: 100%;
+    height: 100%;
+}
+/* subscribe btn */
+.subscribeBtn {
+    padding: 20px 69px;
+    border: none;
+  }
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+/*  */
+.swiper {
+    margin-bottom: 28px;
+    height: 181px;
+    margin-right: -16px;
+    margin-left: -16px;
+}
+
+.swiper-wrapper {
+    height: 181px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 153px;
+    height: 181px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    z-index: 999;
+    width: 41px;
+    height: 27px;
+    background-size: contain;
+}
+
+.swiper-button-prev {
+    background-image: url("./arrow-prev.svg");
+    
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0;
+}
+
+.swiper-button-next {
+    background-image: url("./arrow-next.svg");
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 24px;
+        width: 768px;
+    }
+    .swiper {
+        height: 398px;
+        margin-right: -24px;
+        margin-left: -24px;
+    }
+    .swiper-wrapper {
+        height: 398px;
+    }
+
+
+    .swiper-slide {
+        width: 344px;
+        height: 398px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 96px;
+        height: 64px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+
+    .swiper {
+        height: 420px;
+        margin-left: 0;
+        margin-right: 0;
+
+        overflow: visible;
+    }
+
+    .swiper-wrapper {
+        height: 420px;
+    }
+
+    .swiper-slide {
+        width: 390px;
+        height: 420px;
+    }
+    .swiper-button-prev {
+        left: -24px;
+    }
+    .swiper-button-next {
+        right: -24px;
+    }
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+.blog {
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+}

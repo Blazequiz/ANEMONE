@@ -1,82 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>ANEMONE</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
 	<link rel="stylesheet" href="./css/main.min.css" />
 </head>
-
 <body>
 	<header class="header">
-		<div class="container">
+		<div class="container flex">
 			<a href="./index" class="header-logo">
 				<svg class="header-logo-icon">
 					<use href="./images/symbol-defs.svg#icon-logo-mob"></use>
 				</svg>
-				<ul class="header-nav-list">
+				<ul class="header-nav-list flex">
+					
 					<li class="header-nav-list-item">
-						<a href="#">Anemone</a>
+						<a href="#" class="header-nav-link">Anemone</a>
 					</li>
 					<li class="header-nav-list-item">
-						<a href="#">About us</a>
+						<a href="#" class="header-nav-link">About us</a>
 					</li>
 					<li class="header-nav-list-item">
-						<a href="#">Store</a>
+						<a href="#" class="header-nav-link">Store</a>
 					</li>
 					<li class="header-nav-list-item">
-						<a href="#">Delivery</a>
+						<a href="#" class="header-nav-link">Delivery</a>
 					</li>
 					<li class="header-nav-list-item">
-						<a href="#">Blog</a>
+						<a href="#" class="header-nav-link">Blog</a>
 					</li>
 				</ul>
-				<button type="button" class="modal-open-button" data-modal-open>
+
+				<button type="button" class="header-btn-modal modal-open-button" data-modal-open>
+
 					<svg class="header-tel-icon" >
+
 						<use href="./images/symbol-defs.svg#icon-tel"></use>
 					</svg>
 				</button>
-				<button>
-					<svg class="header-burger-icon">
+				<button class="header-btn-menu">
+					<svg class="header-burger-icon" >
 						<use href="./images/symbol-defs.svg#icon-header-burger"></use>
 					</svg>
 				</button>
 	</header>
 	<main>
 			<section class="hero">
-				<div class="container hero__blcks">
+				<div class="container">
 					<div class="hero__wrapper">
 						<h2 class="hero__text">
 							hero studio
 						</h2>
-						<img
-							srcset="./images/hero/hero-mobile@1x.jpg 145w,
-							./images/hero/hero-mobile@2x.jpg 290w, 
-							./images/hero/hero-tablet@1x.jpg 390w
-							./images/hero/hero-tablet@2x.jpg 780w"
-							sizes="(min-width: 768px) 390px, (min-width: 320px) 145px, 100vw"
-							src="./images/hero/hero-img@1x.jpg"
-							alt="hero flower"
-		/>
+						<img class="hero__background"
+							srcset="./images/hero/mobile/hero-mobile@1x.jpg 145w,
+							./images/hero/mobile/hero-mobile@2x.jpg 290w, 
+							./images/hero/tablet/hero-tablet@1x.jpg 390w
+							./images/hero/tablet/hero-tablet@2x.jpg 780w" sizes="(min-width: 768px) 390px, (min-width: 320px) 145px, 100vw"
+						src="./images/hero/desktop/hero-img@1x.jpg" alt="hero flower" />
 					<button class="hero__button">
-						<svg class="icon__to__hero hero__icon-mobile">
+						<svg class="hero__icons hero__icon-mobile">
 							<use href="./images/symbol-defs.svg#icon-hero-btn-dek"></use>
-							</svg>
+						</svg>
 					</button>
 					</div>
-					<h1 class="title__hero">
+					<h1 class="hero__title">
 						ANEMONE
 					</h1>
 				</div>
 			</section>
-			
 				<section class="about">
 					<h2 class="about-title section-title">ABOUT</h2> 
 					<p class="about-text">We are a minimalistic flower studio.
@@ -163,45 +163,85 @@
 							yourself</h3>
 					</li>
 				</ul>
-					<picture>
-						<source
-							srcset="./images/delivery/desktop/delivery-1x.jpg 1x, ./images/delivery/desktop/delivery-2x.jpg 2x">
-						<source
-							srcset="./images/delivery/mobile/delivery-mobile-1x.jpg 1x, ./images/delivery/mobile/delivery-mobile-2x.jpg 2x">
-						<source
-							srcset="./images/delivery/tablet/delivery-tablet-1x.jpg 1x, ./images/delivery/tablet/delivery-tablet-2x.jpg 2x">
-						<img src="./images/delivery/desktop/delivery-1x.jpg" alt="" class="delivery__img">
-					</picture>
 			</div>
+			<picture>
+				<source
+					srcset="./images/delivery/desktop/delivery-1x.jpg 1x, ./images/delivery/desktop/delivery-2x.jpg 2x">
+				<source
+					srcset="./images/delivery/mobile/delivery-mobile-1x.jpg 1x, ./images/delivery/mobile/delivery-mobile-2x.jpg 2x">
+				<source
+					srcset="./images/delivery/tablet/delivery-tablet-1x.jpg 1x, ./images/delivery/tablet/delivery-tablet-2x.jpg 2x">
+				<img src="./images/delivery/desktop/delivery-1x.jpg" alt="" class="delivery__img">
+			</picture>
+
 		</section>
-		<section class="blog"></section>
+		<section class="blog">
+        <div class="container">
+          <div class="blog-section">
+            <h2 class="blog-section-title section-title">BLOG</h2>
+          </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/blog/first-img@1x.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/blog/second-img@1x.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/blog/third-img@1x.jpg" />
+                    </div>
+										<div class="swiper-slide">
+											<img src="./images/blog/third-img@1x.jpg" />
+									</div>
+                </div>
+                <div class="swiper-button-prev">
+                  <svg width="97" height="64" viewBox="0 0 97 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="65" cy="32" r="31.5" stroke="black" />
+                    <path d="M0.646447 31.6464C0.451184 31.8417 0.451184 32.1583 0.646447 32.3536L3.82843 35.5355C4.02369 35.7308 4.34027 35.7308 4.53553 35.5355C4.7308 35.3403 4.7308 35.0237 4.53553 34.8284L1.70711 32L4.53553 29.1716C4.7308 28.9763 4.7308 28.6597 4.53553 28.4645C4.34027 28.2692 4.02369 28.2692 3.82843 28.4645L0.646447 31.6464ZM1 32.5H67V31.5H1V32.5Z" fill="black" />
+                  </svg>
+                </div>
+                <div class="swiper-button-next">
+                  <svg width="97" height="64" viewBox="0 0 97 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32" cy="32" r="31.5" stroke="black" />
+                    <path d="M96.3536 32.3536C96.5488 32.1583 96.5488 31.8417 96.3536 31.6464L93.1716 28.4645C92.9763 28.2692 92.6597 28.2692 92.4645 28.4645C92.2692 28.6597 92.2692 28.9763 92.4645 29.1716L95.2929 32L92.4645 34.8284C92.2692 35.0237 92.2692 35.3403 92.4645 35.5355C92.6597 35.7308 92.9763 35.7308 93.1716 35.5355L96.3536 32.3536ZM30 32.5H96V31.5H30V32.5Z" fill="black" />
+                  </svg>
+                </div>
+            </div>
+            <h2 class="folllow-h2" style="text-align: center;">Follow to our newsletter</h2>    
+            <button class="subscribeBtn section-button">Subscribe</button>
+						<!-- <div class="btn-wrapper"></div> -->
+        </div>		
+		</section>
 	</main>
 	<footer></footer>
 
 	<div class="backdrop is-hidden" data-modal>
-			<div class="modal">
-				<button class="modal-close-button" data-modal-close>X</button>
-				<h2>Contact us</h2>
-				<p>If you have any additional questions or you want to clarify something before you make an order please fill in your contact details. We will call you back. </p>
-				<form class="modal-form">
-						<div class="modal-field">
-							<label class="modal-label">
-								Name 
-								<input type="text" placeholder="Your name" class="modal-input">
-							</label>
-						</div>
-						<div class="modal-field">
-							<label class="modal-label">
-								Email
-								<input type="email" placeholder="Your email" class="modal-input">
-							</label>
-						</div>
-				</form>
-				<button class="modal-button">Send</button>
-			</div>
+		<div class="modal">
+			<button class="modal-close-button" data-modal-close>X</button>
+			<h2>Contact us</h2>
+			<p>If you have any additional questions or you want to clarify something before you make an order please
+				fill in your contact details. We will call you back. </p>
+			<form class="modal-form">
+				<div class="modal-field">
+					<label class="modal-label">
+						Name
+						<input type="text" placeholder="Your name" class="modal-input">
+					</label>
+				</div>
+				<div class="modal-field">
+					<label class="modal-label">
+						Email
+						<input type="email" placeholder="Your email" class="modal-input">
+					</label>
+				</div>
+			</form>
+			<button class="modal-button">Send</button>
+		</div>
 	</div>
-
 	<script src="./js/modal.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="./js/swiper.js"></script>
 </body>
 
 </html>
