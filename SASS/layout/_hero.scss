@@ -10,7 +10,6 @@
 }
 
 .hero__text {
-  width: 46px;
   height: 34px;
   font-weight: 400;
   font-size: 14px;
@@ -60,6 +59,7 @@
     border: none;
     padding: 0;
     margin-left: 0;
+    cursor: pointer;
 }
 
 .hero__icons{
@@ -69,11 +69,13 @@
     @media screen and (min-width: 320px) {
       width: 64px;
       height: 76px;
+      margin-left: 9px;
     }
 
     @media screen and (min-width: 768px) {
       width: 166px;
       height: 166px;
+      margin-left: 39px;
     }
 
     @media screen and (min-width: 1288px) {
