@@ -240,7 +240,7 @@
 								 </div>	
             </div>
             <h2 class="folllow-h2" style="text-align: center;">Follow to our newsletter</h2>    
-            <button class="subscribeBtn section-button">Subscribe</button>
+            <button class="subscribeBtn section-button" subs-modal-open>Subscribe</button>
 						<!-- <div class="btn-wrapper"></div> -->
         </div>		
 		</section>
@@ -270,6 +270,21 @@
 			<button class="modal-button">Send</button>
 		</div>
 	</div>
+	<div class="backdrop is-hidden" subs-modal>
+        <div class="subscribe_modal">
+            <button class="close_button" subs-modal-close><svg width="18px" height="18px" class="close_button_svg"><use href="./images/symbol-defs.svg#icon-close-btn-menu"></use></svg></button>
+            <div class="subscribe_div">
+            <h2 class="subscribe_modal_title">Follow to our newsletter</h2>
+            <p class="subscribe_modal_description">Be the first  to get exclusive offers and the latest  news on our product directly in<br> your box.</p>
+            <form class="subscribe_modal_form">
+                <label for="user_email" class="subscribe_modal_label">Email</label>
+          <input type="text" name="user_email" class="subscribe_modal_input" placeholder="Your email" required>
+          <button type="submit" class="subscribe_modal_submit-button">Subscribe</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    <script src="./js/subscribe_modal.js"></script>
 	<script src="./js/modal.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="./js/swiper.js"></script>
