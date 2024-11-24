@@ -641,23 +641,23 @@ section {
   background-size: cover;
   display: block;
   background-color: white;
-  background-image: url("../../images/subscribe_phone_1x.jpg");
+  background-image: url("../../images/subscribe_modal/subscribe_phone_1x.jpg");
   background-repeat: no-repeat;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .subscribe_modal::before {
-    background-image: url("../../images/subscribe_phone_2x.jpg");
+    background-image: url("../../images/subscribe_modal/subscribe_phone_2x.jpg");
   }
 }
 @media (min-width: 768px) {
   .subscribe_modal::before {
     height: 272px;
-    background-image: url("../../images/subscribe_tablet_1x.jpg");
+    background-image: url("../../images/subscribe_modal/subscribe_tablet_1x.jpg");
   }
 }
 @media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
   .subscribe_modal::before {
-    background-image: url("../../images/subscribe_tablet_2x.jpg");
+    background-image: url("../../images/subscribe_modal/subscribe_tablet_2x.jpg");
   }
 }
 @media (min-width: 1200px) {
@@ -665,12 +665,12 @@ section {
     display: flex;
     width: 428px;
     height: 528px;
-    background-image: url("../../images/subscribe_desktop_1x.jpg");
+    background-image: url("../../images/subscribe_modal/subscribe_desktop_1x.jpg");
   }
 }
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .subscribe_modal::before {
-    background-image: url("../../images/subscribe_desktop_2x.jpg");
+    background-image: url("../../images/subscribe_modal/subscribe_desktop_2x.jpg");
   }
 }
 
