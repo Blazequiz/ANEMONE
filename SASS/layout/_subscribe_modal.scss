@@ -25,7 +25,7 @@
     height: 120px;
     background-size: cover;
     display: block;
-    background-color: white;
+    background-color: $secondary-color;
     background-image: url("../../images/subscribe_modal/subscribe_phone_1x.jpg");
     background-repeat: no-repeat;
     @media (min-device-pixel-ratio: 2),
@@ -135,8 +135,8 @@ height: 35px;
 font-weight: 600;
 font-size: 14px;
 text-align: center;
-color: #fff;
-background-color: #e86f54;
+color: $secondary-color;
+background-color: $accent-color;
 transition-property: background-color;
   transition-duration: 750ms;
   transition-timing-function: linear;
@@ -148,7 +148,7 @@ padding: 14px 122px;
 }
 }
 .subscribe_modal_submit-button:hover{
-    background-color: #E25B41;
+    background-color: $hover-color;
     cursor: pointer;
     transition-property: background-color;
   transition-duration: 750ms;
@@ -178,7 +178,7 @@ padding: 14px 122px;
     }
 }
 .close_button_svg{
-    fill: black;
+    fill: $main-color;
 }
 .backdrop {
     z-index: 3;

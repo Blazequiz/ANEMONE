@@ -640,7 +640,7 @@ section {
   height: 120px;
   background-size: cover;
   display: block;
-  background-color: white;
+  background-color: #FFFFFF;
   background-image: url("../../images/subscribe_modal/subscribe_phone_1x.jpg");
   background-repeat: no-repeat;
 }
@@ -779,8 +779,8 @@ section {
   font-weight: 600;
   font-size: 14px;
   text-align: center;
-  color: #fff;
-  background-color: #e86f54;
+  color: #FFFFFF;
+  background-color: #E86F54;
   transition-property: background-color;
   transition-duration: 750ms;
   transition-timing-function: linear;
@@ -834,7 +834,7 @@ section {
 }
 
 .close_button_svg {
-  fill: black;
+  fill: #000000;
 }
 
 .backdrop {
