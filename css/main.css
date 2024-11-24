@@ -289,16 +289,48 @@ section {
 
 .about-title {
   margin-bottom: 32px;
-  line-height: 29.26px;
 }
-
+@media screen and (min-width: 768px) {
+  .about-title {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-title {
+    margin-bottom: 26px;
+  }
+}
 .about-text {
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 16px;
-  width: 275px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 19.5px;
 }
+@media screen and (min-width: 768px) {
+  .about-text {
+    font-size: 20px;
+    width: 322px;
+  }
+}
+.about-img {
+  width: 288px;
+}
+@media screen and (min-width: 768px) {
+  .about-img {
+    width: 344px;
+  }
+}
+.about-flex {
+  width: 100%;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .about-flex {
+    display: flex;
+    gap: 54px;
+  }
+}
+
 .store-title {
   margin-bottom: 80px;
 }
