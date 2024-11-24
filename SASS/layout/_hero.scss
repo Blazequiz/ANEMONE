@@ -23,7 +23,7 @@
     height: 58px;
     font-size: 24px;
     padding-left: 49px;
-    margin-right: 40px;
+    margin-right: 110px;
   }
 
   @media screen and (min-width: 1288px) {
@@ -59,6 +59,7 @@
     background-color: inherit;
     border: none;
     padding: 0;
+    margin-left: 0;
 }
 
   .hero__background {
@@ -70,8 +71,8 @@
       height: 636px;
 
       @media screen and (min-width: 1288px) {
-
         height: 636px;
+        margin-left: 110px;
       }
     }
   }
