@@ -1,87 +1,35 @@
-.about-title {
-    margin-bottom: 32px;
-    line-height: 29.26px;
-}
-
-.about-img {
-    margin-bottom: 39px;
-    width: 288px;
-    height: 178px;
-    top: 217px;
-    gap: 0px;
-    border-radius: 0px 639.5px 639.5px 0px;
-
-
-}
-
-.about-text {
-    margin-bottom: 16px;
-    width: 275px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.5px;
-
+.about {
+    &-title {
+        margin-bottom: 32px;
     @media screen and (min-width: 768px) {
-        .about-text {
-            margin-bottom: 30px;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 26px;
+    }
+    }
+    &-text {
+        font-family: $font-family;
+        margin-bottom: 16px;
+        font-size: 16px;
+        font-weight: 400;
+        @media screen and (min-width: 768px) {
             font-size: 20px;
-            font-weight: 400;
-            line-height: 24.38px;
-            text-decoration-skip-ink: none;
-
-        }
-
-        .about-title {
-
-            font-size: 44px;
-            font-weight: 700;
-            line-height: 53.64px;
-            text-align: left;
-            text-decoration-skip-ink: none;
-
-        }
-
-        .about-img {
-            width: 344px;
-            height: 217px;
-            top: 84px;
-            left: 376px;
-            gap: 0px;
-            border-radius: 0px 639.5px 639.5px 0px;
-
-
+            width: 322px;
         }
     }
-
-    @media screen and (min-width: 1280px) {
-        .about-text {
-            margin-bottom: 50px;
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 26.82px;
-            text-decoration-skip-ink: none;
-
-
+    &-img {
+        width: 288px;
+        @media screen and (min-width: 768px) {
+            width: 344px;
         }
-
-        .about-title {
-            font-size: 44px;
-            font-weight: 700;
-            line-height: 53.64px;
-            text-align: left;
-            text-decoration-skip-ink: none;
-
+    }
+    &-flex {
+        width: 100%;
+        display: block;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            gap: 54px;
         }
-
-        .about-img {
-            width: 632px;
-            height: 344px;
-            top: 80px;
-            left: 600px;
-            gap: 0px;
-            border-radius: 0px 639.5px 639.5px 0px;
-
-        }
-
     }
 }

@@ -309,16 +309,48 @@ section {
 
 .about-title {
   margin-bottom: 32px;
-  line-height: 29.26px;
 }
-
+@media screen and (min-width: 768px) {
+  .about-title {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-title {
+    margin-bottom: 26px;
+  }
+}
 .about-text {
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 16px;
-  width: 275px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 19.5px;
 }
+@media screen and (min-width: 768px) {
+  .about-text {
+    font-size: 20px;
+    width: 322px;
+  }
+}
+.about-img {
+  width: 288px;
+}
+@media screen and (min-width: 768px) {
+  .about-img {
+    width: 344px;
+  }
+}
+.about-flex {
+  width: 100%;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .about-flex {
+    display: flex;
+    gap: 54px;
+  }
+}
+
 .store-title {
   margin-bottom: 80px;
 }
@@ -410,6 +442,7 @@ section {
   }
 }
 .delivery__item {
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 14px;
   display: flex;
@@ -418,6 +451,7 @@ section {
 }
 @media screen and (min-width: 768px) {
   .delivery__item {
+    font-family: "Montserrat", sans-serif;
     font-size: 24px;
     gap: 20px;
     height: 64px;
@@ -449,7 +483,7 @@ section {
 }
 @media screen and (min-width: 1280px) {
   .delivery__img {
-    width: 100%;
+    width: 1280px;
     height: 391px;
   }
 }
@@ -660,24 +694,24 @@ section {
   height: 120px;
   background-size: cover;
   display: block;
-  background-color: white;
-  background-image: url("../../images/subscribe_phone_1x.jpg");
+  background-color: #FFFFFF;
+  background-image: url("../../images/subscribe_modal/subscribe_phone_1x.jpg");
   background-repeat: no-repeat;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .subscribe_modal::before {
-    background-image: url("../../images/subscribe_phone_2x.jpg");
+    background-image: url("../../images/subscribe_modal/subscribe_phone_2x.jpg");
   }
 }
 @media (min-width: 768px) {
   .subscribe_modal::before {
     height: 272px;
-    background-image: url("../../images/subscribe_tablet_1x.jpg");
+    background-image: url("../../images/subscribe_modal/subscribe_tablet_1x.jpg");
   }
 }
 @media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
   .subscribe_modal::before {
-    background-image: url("../../images/subscribe_tablet_2x.jpg");
+    background-image: url("../../images/subscribe_modal/subscribe_tablet_2x.jpg");
   }
 }
 @media (min-width: 1200px) {
@@ -685,12 +719,12 @@ section {
     display: flex;
     width: 428px;
     height: 528px;
-    background-image: url("../../images/subscribe_desktop_1x.jpg");
+    background-image: url("../../images/subscribe_modal/subscribe_desktop_1x.jpg");
   }
 }
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .subscribe_modal::before {
-    background-image: url("../../images/subscribe_desktop_2x.jpg");
+    background-image: url("../../images/subscribe_modal/subscribe_desktop_2x.jpg");
   }
 }
 
@@ -799,8 +833,8 @@ section {
   font-weight: 600;
   font-size: 14px;
   text-align: center;
-  color: #fff;
-  background-color: #e86f54;
+  color: #FFFFFF;
+  background-color: #E86F54;
   transition-property: background-color;
   transition-duration: 750ms;
   transition-timing-function: linear;
@@ -854,7 +888,7 @@ section {
 }
 
 .close_button_svg {
-  fill: black;
+  fill: #000000;
 }
 
 .backdrop {
