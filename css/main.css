@@ -312,6 +312,15 @@ section {
   line-height: 29.26px;
 }
 
+.about-img {
+  margin-bottom: 39px;
+  width: 288px;
+  height: 178px;
+  top: 217px;
+  gap: 0px;
+  border-radius: 0px 639.5px 639.5px 0px;
+}
+
 .about-text {
   margin-bottom: 16px;
   width: 275px;
@@ -319,6 +328,59 @@ section {
   font-weight: 400;
   line-height: 19.5px;
 }
+@media screen and (min-width: 768px) {
+  .about-text .about-text {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+  .about-text .about-title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 53.64px;
+    text-align: left;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+  .about-text .about-img {
+    width: 344px;
+    height: 217px;
+    top: 84px;
+    left: 376px;
+    gap: 0px;
+    border-radius: 0px 639.5px 639.5px 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-text .about-text {
+    margin-bottom: 50px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.82px;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+  .about-text .about-title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 53.64px;
+    text-align: left;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+  .about-text .about-img {
+    width: 632px;
+    height: 344px;
+    top: 80px;
+    left: 600px;
+    gap: 0px;
+    border-radius: 0px 639.5px 639.5px 0px;
+  }
+}
+
 .store-title {
   margin-bottom: 80px;
 }
@@ -879,4 +941,39 @@ section {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+  width: 272px;
+  padding: 28px 16px;
+}
+
+.modal-close-button {
+  top: 8px;
+  right: 8px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 66px;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  opacity: 20px;
+  fill: #000000;
+  transition-property: color;
+  opacity: 1;
+  translate: scale(x, y);
+  transition-duration: 250ms;
+  transform: scale(1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }/*# sourceMappingURL=main.css.map */
