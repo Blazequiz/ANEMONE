@@ -662,6 +662,25 @@ section {
   }
 }
 
+.footer {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.footer-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.footer-logo-icon {
+  fill: currentColor;
+}
+
+.footer-social-icon {
+  fill: currentColor;
+}
+
 .subscribe_modal {
   display: flex;
   flex-direction: column;
