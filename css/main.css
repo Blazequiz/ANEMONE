@@ -478,6 +478,9 @@ section {
     height: 64px;
   }
 }
+.delivery__text {
+  font-weight: 500;
+}
 .delivery__img {
   padding: 0;
 }
