@@ -665,6 +665,8 @@ section {
 .footer {
   background-color: #000000;
   color: #FFFFFF;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .footer-flex {
@@ -673,12 +675,35 @@ section {
   gap: 32px;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-logo {
+    display: none;
+  }
+}
+
 .footer-logo-icon {
   fill: currentColor;
 }
 
 .footer-social-icon {
   fill: currentColor;
+  width: 28px;
+  height: 28px;
+}
+
+.text-container {
+  width: 128px;
+}
+
+.footer-title {
+  margin-bottom: 18px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  word-wrap: break-word;
 }
 
 .subscribe_modal {
