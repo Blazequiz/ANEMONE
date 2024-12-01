@@ -1,0 +1,22 @@
+.footer{
+
+    background-color: $main-color ;
+    color: $secondary-color;
+}
+.footer-flex{
+display: flex;
+flex-wrap: wrap;
+gap: 32px;
+}
+.footer-logo{
+// display: none;
+
+}
+.footer-logo-icon{
+fill: currentColor;
+    
+    }
+    .footer-social-icon{
+        fill: currentColor;
+            
+            }
