@@ -40,11 +40,8 @@
 						<a href="#" class="header-nav-link">Blog</a>
 					</li>
 				</ul>
-
 				<button type="button" class="header-btn-modal modal-open-button" data-modal-open>
-
 					<svg class="header-tel-icon" >
-
 						<use href="./images/symbol-defs.svg#icon-tel"></use>
 					</svg>
 				</button>
@@ -79,19 +76,27 @@
 				</div>
 			</section>
 				<section class="about">
-					<h2 class="about-title section-title">ABOUT</h2> 
-					<p class="about-text">We are a minimalistic flower studio.
-					 We love people and
-					 flowers. Therefore, every day we 
-					 give people the beauty and joy
-					  creating stylish and modern 
-					  masterpieces. Every bouquet
-					   we create is unique as you are.</p>
-					   <img  src="./imeges/imageMobile_about.jpg"    class="about-img">
-		
-				
-			</section>
-			<section class="store">
+					<div class="container">
+						<h2 class="about-title section-title">ABOUT</h2> 
+						<div class="about-flex">
+							<p class="about-text">We are a minimalistic flower studio.
+					 			We love people and
+					 			flowers. Therefore, every day we 
+					 			give people the beauty and joy
+					  		creating stylish and modern 
+					 			masterpieces. Every bouquet
+					   		we create is unique as you are.
+							</p>
+					   		<picture>
+									<source srcset="./images/about/desktop/image_about_1x_desktop.jpg 1x, ./images/about/desktop/image_about_2x_desktop.jpg 2x" media=""></source>
+									<source srcset="./images/about/tablet/image_about_1x_tablet.jpg 1x, ./images/about/tablet/image_about_2x_tablet.jpg 2x" media=""></source>
+									<source srcset="./images/about/mobile/image_about_1x_mobile.jpg 1x, ./images/about/mobile/image_about_2x_mobile.jpg 2x" media=""></source>
+									<img src="./images/about/desktop/image_about_1x_desktop.jpg" alt="about-img">
+						 		</picture>
+						</div>
+					</div>
+				</section>
+		<section class="store">
 				<div class="container">
 					<h2 class="store-title section-title">STORE</h2>
 					<ul class="store-list">
@@ -174,7 +179,6 @@
 					srcset="./images/delivery/tablet/delivery-tablet-1x.jpg 1x, ./images/delivery/tablet/delivery-tablet-2x.jpg 2x">
 				<img src="./images/delivery/desktop/delivery-1x.jpg" alt="" class="delivery__img">
 			</picture>
-
 		</section>
 		<section class="blog">
         <div class="container">
@@ -183,18 +187,38 @@
           </div>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./images/blog/first-img@1x.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./images/blog/second-img@1x.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./images/blog/third-img@1x.jpg" />
-                    </div>
-										<div class="swiper-slide">
-											<img src="./images/blog/third-img@1x.jpg" />
-									</div>
+									<div class="swiper-slide">
+										<picture>
+												<source srcset="./images/blog/first-img@1x.jpg 1x, ./images/blog/first-img@2x.jpg 2x" media="(min-width:1200px)"> 
+												<source srcset="./images/blog/first-img-tablet@1x.jpg 1x, ./images/blog/first-img-tablet@2x.jpg 2x" media="(min-width:768px)">
+												<source srcset="./images/blog/first-img-mobile@1x.jpg 1x, ./images/blog/first-img-mobile@1x.jpg 2x" media="(max-width:767px)">
+												<img src="./images/blog/first-img.jpg-img@1x.jpg" />
+										</picture>
+								</div>
+								<div class="swiper-slide">
+										<picture>
+												<source srcset="./images/blog/second-img@1x.jpg 1x, ./images/blog/second-img@2x.jpg 2x" media="(min-width:1200px)"> 
+												<source srcset="./images/blog/second-img-tablet@1x.jpg 1x, ./images/blog/second-img-tablet@2x.jpg 2x" media="(min-width:768px)">
+												<source srcset="./images/blog/second-img-mobile@1x.jpg 1x, ./images/blog/second-img-mobile@2x.jpg 2x" media="(max-width:767px)">
+												<img src="./images/blog/second-img@1x.jpg" />
+										</picture>
+								</div>
+								<div class="swiper-slide">
+										<picture>
+												<source srcset="./images/blog/third-img@1x.jpg 1x, ./images/blog/third-img@2x.jpg 2x" media="(min-width:1200px)"> 
+												<source srcset="./images/blog/third-img-tablet@1x.jpg 1x, ./images/blog/third-img-tablet@2x.jpg 2x" media="(min-width:768px)">
+												<source srcset="./images/blog/third-img-mobile@1x.jpg 1x, ./images/blog/third-img-mobile@2x.jpg 2x" media="(max-width:767px)">
+												<img src="./images/blog/third-img@1x.jpg" />
+										</picture>
+								</div>
+								<div class="swiper-slide">
+										<picture>
+												<source srcset="./images/blog/third-img@1x.jpg 1x, ./images/blog/third-img@2x.jpg 2x" media="(min-width:1200px)"> 
+												<source srcset="./images/blog/third-img-tablet@1x.jpg 1x, ./images/blog/third-img-tablet@2x.jpg 2x" media="(min-width:768px)">
+												<source srcset="./images/blog/third-img-mobile@1x.jpg 1x, ./images/blog/third-img-mobile@2x.jpg 2x" media="(max-width:767px)">
+												<img src="./images/blog/third-img@1x.jpg" />
+										</picture>
+								</div>
                 </div>
 								<!-- btn -->
                 <div class="swiper-button-prev">
@@ -245,7 +269,59 @@
         </div>		
 		</section>
 	</main>
-	<footer></footer>
+	<footer class="footer">
+<div class="container footer-flex" >
+	<a href="./index.html" class="footer-logo">
+		<svg class="footer-logo-icon">
+				<use href="./images/symbol-defs.svg#icon-logo-dek-tab">
+            
+			</use>
+		</svg>
+	</a>
+	<div>
+		<h3 class="footer-title">Navigation</h3>
+		<ul class="footer-list">
+			<li>Anemone</li>
+			<li>About us</li>
+			<li>Store</li>
+			<li>Delivery</li>
+		</ul>
+	</div>
+	<div>
+		<h3 class="footer-title">Opening times</h3>
+		<ul class="footer-list">
+			<li>Every day
+				9:00 - 22:00</li>
+		</ul>
+	</div>
+	<div>
+		<h3 class="footer-title">Contacts</h3>
+		<ul class="footer-list">
+			<li>+38 063 123 45 67</li>
+			<li>anemonestudio@example.com</li>
+			<li>Reitarska Street, 11
+				Kyiv, Ukraine</li>
+		
+		</ul>
+	</div>
+	<ul class="footer-social-list">
+		<li>
+			<svg class="footer-social-icon">
+				<use href="./images/symbol-defs.svg#icon-facebook">
+            
+			</use>
+		</svg>
+		</li>
+		<li>
+			<svg class="footer-social-icon">
+				<use href="./images/symbol-defs.svg#icon-instagram">
+            
+			</use>
+		</svg>
+		</li>
+	</ul>
+</div>
+	</footer>
 
 	<div class="backdrop is-hidden" data-modal>
 		<div class="modal">
@@ -290,5 +366,4 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="./js/swiper.js"></script>
 </body>
-
 </html>
