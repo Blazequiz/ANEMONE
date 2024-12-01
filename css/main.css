@@ -478,6 +478,9 @@ section {
     height: 64px;
   }
 }
+.delivery__text {
+  font-weight: 500;
+}
 .delivery__img {
   padding: 0;
 }
@@ -660,6 +663,25 @@ section {
   .tablet-btn {
     display: none;
   }
+}
+
+.footer {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.footer-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.footer-logo-icon {
+  fill: currentColor;
+}
+
+.footer-social-icon {
+  fill: currentColor;
 }
 
 .subscribe_modal {
