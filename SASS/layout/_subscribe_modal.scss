@@ -10,7 +10,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  border: 1px solid black;
   @media(min-width: 768px) {
     width: 588px;
 }
@@ -26,31 +25,31 @@
     background-size: cover;
     display: block;
     background-color: $secondary-color;
-    background-image: url("../../images/subscribe_modal/subscribe_phone_1x.jpg");
+    background-image: url("../images/subscribe_modal/subscribe_phone_1x.jpg");
     background-repeat: no-repeat;
     @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url("../../images/subscribe_modal/subscribe_phone_2x.jpg");
+    background-image: url("../images/subscribe_modal/subscribe_phone_2x.jpg");
   }
     @media(min-width: 768px) {
         height: 272px;
-        background-image: url("../../images/subscribe_modal/subscribe_tablet_1x.jpg");
+        background-image: url("../images/subscribe_modal/subscribe_tablet_1x.jpg");
         @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url("../../images/subscribe_modal/subscribe_tablet_2x.jpg");
+    background-image: url("../images/subscribe_modal/subscribe_tablet_2x.jpg");
   }
     }
     @media(min-width: 1200px) {
         display: flex;
         width: 428px;
         height: 528px;
-        background-image: url("../../images/subscribe_modal/subscribe_desktop_1x.jpg");
+        background-image: url("../images/subscribe_modal/subscribe_desktop_1x.jpg");
         @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url("../../images/subscribe_modal/subscribe_desktop_2x.jpg");
+    background-image: url("../images/subscribe_modal/subscribe_desktop_2x.jpg");
   }
     }
 }
@@ -157,16 +156,26 @@ padding: 14px 122px;
 .subscribe_div{
     display: flex;
     flex-direction: column;
-    margin-bottom: 28px;
+    padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 28px;
     @media(min-width: 768px) {
-        margin-bottom: 40px;
+        padding-left: 116px;
+        padding-right: 116px;
+        padding-bottom: 40px;
     }
     @media(min-width: 1200px) {
-        padding-left: 40px;
-        margin-bottom: 112px;
+        padding: 112px 40px;
     }
 }
 .close_button{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    cursor: pointer;
     position: absolute;
     width: 18px;
     height: 18px;
