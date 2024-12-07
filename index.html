@@ -40,16 +40,19 @@
 						<a href="#" class="header-nav-link">Blog</a>
 					</li>
 				</ul>
-				<button type="button" class="header-btn-modal modal-open-button" data-modal-open>
+				<button type="button" class="header-btn-modal modal-open-button" data-modal-open
+				aria-controls="mobile-menu"
+				aria-expanded="false">
 					<svg class="header-tel-icon" >
 						<use href="./images/symbol-defs.svg#icon-tel"></use>
 					</svg>
 				</button>
-				<button class="header-btn-menu">
+				<button class="header-btn-menu js-open-menu">
 					<svg class="header-burger-icon" >
 						<use href="./images/symbol-defs.svg#icon-header-burger"></use>
 					</svg>
 				</button>
+		</div>
 	</header>
 	<main>
 			<section class="hero">
@@ -61,7 +64,7 @@
 						<img class="hero__background"
 							srcset="./images/hero/mobile/hero-mobile@1x.jpg 145w,
 							./images/hero/mobile/hero-mobile@2x.jpg 290w, 
-							./images/hero/tablet/hero-tablet@1x.jpg 390w
+							./images/hero/tablet/hero-tablet@1x.jpg 390w,
 							./images/hero/tablet/hero-tablet@2x.jpg 780w" sizes="(min-width: 768px) 390px, (min-width: 320px) 145px, 100vw"
 						src="./images/hero/desktop/hero-img@1x.jpg" alt="hero flower" />
 					<button class="hero__button">
@@ -102,9 +105,9 @@
 					<ul class="store-list">
 						<li class="store-item">
 							<picture>
-								<source srcset="./images/store/desktop/bouquet1-1x-desktop.jpg 1x, ./images/store/desktop/bouquet1-2x-desktop.jpg 2x" media=""></source>
-								<source srcset="./images/store/tablet/bouquet1-1x-tablet.jpg 1x, ./images/store/tablet/bouquet1-2x-tablet.jpg 2x" media=""></source>
-								<source srcset="./images/store/mobile/bouquet1-1x-mobile.jpg 1x, ./images/store/mobile/bouquet1-2x-mobile.jpg 2x" media=""></source>
+								<source srcset="./images/store/desktop/bouquet1-1x-desktop.jpg 1x, ./images/store/desktop/bouquet1-2x-desktop.jpg 2x" media="min-width:1280px">
+								<source srcset="./images/store/tablet/bouquet1-1x-tablet.jpg 1x, ./images/store/tablet/bouquet1-2x-tablet.jpg 2x" media="min-width:768px">
+								<source srcset="./images/store/mobile/bouquet1-1x-mobile.jpg 1x, ./images/store/mobile/bouquet1-2x-mobile.jpg 2x" media="max-width:767px">
 								<img src="./images/store/desktop/bouquet1-1x-desktop.jpg" alt="bouquet-1" class="store-img"/>
 							</picture>
 							<h3 class="store-description">compliments</h3>
@@ -112,9 +115,9 @@
 						</li>
 						<li class="store-item">
 							<picture>
-								<source srcset="./images/store/desktop/bouquet2-1x-desktop.jpg 1x, ./images/store/desktop/bouquet2-2x-desktop.jpg 2x" media=""></source>
-								<source srcset="./images/store/tablet/bouquet2-1x-tablet.jpg 1x, ./images/store/tablet/bouquet2-2x-tablet.jpg 2x" media=""></source>
-								<source srcset="./images/store/mobile/bouquet2-1x-mobile.jpg 1x, ./images/store/mobile/bouquet2-2x-mobile.jpg 2x" media=""></source>
+								<source srcset="./images/store/desktop/bouquet2-1x-desktop.jpg 1x, ./images/store/desktop/bouquet2-2x-desktop.jpg 2x" media="min-width:1280px">
+								<source srcset="./images/store/tablet/bouquet2-1x-tablet.jpg 1x, ./images/store/tablet/bouquet2-2x-tablet.jpg 2x" media="min-width:768px">
+								<source srcset="./images/store/mobile/bouquet2-1x-mobile.jpg 1x, ./images/store/mobile/bouquet2-2x-mobile.jpg 2x" media="max-width:767px">
 								<img src="./images/store/desktop/bouquet2-1x-desktop.jpg" alt="bouquet-2" class="store-img"/>
 							</picture>
 							<h3 class="store-description">bouquets size S</h3>
@@ -122,9 +125,9 @@
 						</li>
 						<li class="store-item">
 							<picture>
-								<source srcset="./images/store/desktop/bouquet3-1x-desktop.jpg 1x, ./images/store/desktop/bouquet3-2x-desktop.jpg 2x" media=""></source>
-								<source srcset="./images/store/tablet/bouquet3-1x-tablet.jpg 1x, ./images/store/tablet/bouquet3-2x-tablet.jpg 2x" media=""></source>
-								<source srcset="./images/store/mobile/bouquet3-1x-mobile.jpg 1x, ./images/store/mobile/bouquet3-2x-mobile.jpg 2x" media=""></source>
+								<source srcset="./images/store/desktop/bouquet3-1x-desktop.jpg 1x, ./images/store/desktop/bouquet3-2x-desktop.jpg 2x" media="min-width:1280px">
+								<source srcset="./images/store/tablet/bouquet3-1x-tablet.jpg 1x, ./images/store/tablet/bouquet3-2x-tablet.jpg 2x" media="min-width:768px">
+								<source srcset="./images/store/mobile/bouquet3-1x-mobile.jpg 1x, ./images/store/mobile/bouquet3-2x-mobile.jpg 2x" media="max-width:767px">
 								<img src="./images/store/desktop/bouquet3-1x-desktop.jpg" alt="bouquet-3" class="store-img"/>
 							</picture>
 							<h3 class="store-description">bouquets size M</h3>
@@ -132,9 +135,9 @@
 						</li>
 						<li class="store-item">
 							<picture>
-								<source srcset="./images/store/desktop/bouquet4-1x-desktop.jpg 1x, ./images/store/desktop/bouquet4-2x-desktop.jpg 2x" media=""></source>
-								<source srcset="./images/store/tablet/bouquet4-1x-tablet.jpg 1x, ./images/store/desktop/bouquet4-2x-tablet.jpg 2x" media=""></source>
-								<source srcset="./images/store/mobile/bouquet4-1x-mobile.jpg 1x, ./images/store/desktop/bouquet4-2x-mobile.jpg 2x" media=""></source>
+								<source srcset="./images/store/desktop/bouquet4-1x-desktop.jpg 1x, ./images/store/desktop/bouquet4-2x-desktop.jpg 2x" media="min-width:1280px">
+								<source srcset="./images/store/tablet/bouquet4-1x-tablet.jpg 1x, ./images/store/desktop/bouquet4-2x-tablet.jpg 2x" media="min-width:768px">
+								<source srcset="./images/store/mobile/bouquet4-1x-mobile.jpg 1x, ./images/store/desktop/bouquet4-2x-mobile.jpg 2x" media="max-width:767px">
 								<img src="./images/store/desktop/bouquet4-1x-desktop.jpg" alt="bouquet-4" class="store-img"/>
 							</picture>
 							<h3 class="store-description">bouquets size L</h3>
@@ -189,7 +192,7 @@
                 <div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<picture>
-												<source srcset="./images/blog/first-img@1x.jpg 1x, ./images/blog/first-img@2x.jpg 2x" media="(min-width:1200px)"> 
+												<source srcset="./images/blog/first-img@1x.jpg 1x, ./images/blog/first-img@2x.jpg 2x" media="(min-width:1280px)"> 
 												<source srcset="./images/blog/first-img-tablet@1x.jpg 1x, ./images/blog/first-img-tablet@2x.jpg 2x" media="(min-width:768px)">
 												<source srcset="./images/blog/first-img-mobile@1x.jpg 1x, ./images/blog/first-img-mobile@1x.jpg 2x" media="(max-width:767px)">
 												<img src="./images/blog/first-img.jpg-img@1x.jpg" />
@@ -197,7 +200,7 @@
 								</div>
 								<div class="swiper-slide">
 										<picture>
-												<source srcset="./images/blog/second-img@1x.jpg 1x, ./images/blog/second-img@2x.jpg 2x" media="(min-width:1200px)"> 
+												<source srcset="./images/blog/second-img@1x.jpg 1x, ./images/blog/second-img@2x.jpg 2x" media="(min-width:1280px)"> 
 												<source srcset="./images/blog/second-img-tablet@1x.jpg 1x, ./images/blog/second-img-tablet@2x.jpg 2x" media="(min-width:768px)">
 												<source srcset="./images/blog/second-img-mobile@1x.jpg 1x, ./images/blog/second-img-mobile@2x.jpg 2x" media="(max-width:767px)">
 												<img src="./images/blog/second-img@1x.jpg" />
@@ -205,7 +208,7 @@
 								</div>
 								<div class="swiper-slide">
 										<picture>
-												<source srcset="./images/blog/third-img@1x.jpg 1x, ./images/blog/third-img@2x.jpg 2x" media="(min-width:1200px)"> 
+												<source srcset="./images/blog/third-img@1x.jpg 1x, ./images/blog/third-img@2x.jpg 2x" media="(min-width:1280px)"> 
 												<source srcset="./images/blog/third-img-tablet@1x.jpg 1x, ./images/blog/third-img-tablet@2x.jpg 2x" media="(min-width:768px)">
 												<source srcset="./images/blog/third-img-mobile@1x.jpg 1x, ./images/blog/third-img-mobile@2x.jpg 2x" media="(max-width:767px)">
 												<img src="./images/blog/third-img@1x.jpg" />
@@ -213,7 +216,7 @@
 								</div>
 								<div class="swiper-slide">
 										<picture>
-												<source srcset="./images/blog/third-img@1x.jpg 1x, ./images/blog/third-img@2x.jpg 2x" media="(min-width:1200px)"> 
+												<source srcset="./images/blog/third-img@1x.jpg 1x, ./images/blog/third-img@2x.jpg 2x" media="(min-width:1280px)"> 
 												<source srcset="./images/blog/third-img-tablet@1x.jpg 1x, ./images/blog/third-img-tablet@2x.jpg 2x" media="(min-width:768px)">
 												<source srcset="./images/blog/third-img-mobile@1x.jpg 1x, ./images/blog/third-img-mobile@2x.jpg 2x" media="(max-width:767px)">
 												<img src="./images/blog/third-img@1x.jpg" />
@@ -278,7 +281,8 @@
 			</use>
 		</svg>
 	</a>
-	<div>
+	
+	<div class="text-container">
 		<h3 class="footer-title">Navigation</h3>
 		<ul class="footer-list">
 			<li>Anemone</li>
@@ -287,14 +291,14 @@
 			<li>Delivery</li>
 		</ul>
 	</div>
-	<div>
+	<div  class="text-container">
 		<h3 class="footer-title">Opening times</h3>
 		<ul class="footer-list">
 			<li>Every day
 				9:00 - 22:00</li>
 		</ul>
 	</div>
-	<div>
+	<div  class="text-container">
 		<h3 class="footer-title">Contacts</h3>
 		<ul class="footer-list">
 			<li>+38 063 123 45 67</li>
@@ -304,6 +308,7 @@
 		
 		</ul>
 	</div>
+
 	<ul class="footer-social-list">
 		<li>
 			<svg class="footer-social-icon">
@@ -321,6 +326,7 @@
 		</li>
 	</ul>
 </div>
+ 
 	</footer>
 
 	<div class="backdrop is-hidden" data-modal>
@@ -360,8 +366,32 @@
         </div>
         </div>
     </div>
-	
+	<div class="menu-container js-menu-container" id="mobile-menu">
+		<button class="menu-btn js-close-menu">
+		  <svg class="close-menu-btn">
+			<use href="./images/symbol-defs.svg#icon-close-btn-menu"></use>
+		  </svg>
+		</button>
+		<ul class="mob-menu-list">
+		  <li class="mob-menu-item">
+			<a href="./index.html" class="mob-menu-link">Anemone </a>
+		  </li>
+		  <li class="mob-menu-item">
+			<a href="#" class="mob-menu-link">About us </a>
+		  </li>
+		  <li class="mob-menu-item">
+			<a href="#" class="mob-menu-link">Store</a>
+		  </li>
+		  <li class="mob-menu-item">
+			<a href="#" class="mob-menu-link">Delivery</a>
+		  </li>
+		  <li class="mob-menu-item">
+			<a href="#" class="mob-menu-link">Blog</a>
+		  </li>
+		</ul>
+	  </div>
     <script src="./js/subscribe_modal.js"></script>
+	<script src="./js/mob-menu.js"></script>
 	<script src="./js/modal.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="./js/swiper.js"></script>
