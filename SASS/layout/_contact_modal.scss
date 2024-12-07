@@ -1,0 +1,93 @@
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  .modal{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: $secondary-color;
+    width: 272px;
+    padding: 28px 16px;
+    height: 511px;
+    @media  (min-width: 768px){ 
+      width: 480px;
+    }
+  }
+
+
+  
+.modal-close-button {
+    top: 8px;
+    right: 8px;
+     position: absolute;
+     width: 30px;
+     height: 30px;
+     background: none;
+     border: none;
+     display: flex;
+     justify-content: center;
+     opacity: 20px;
+     fill: #000000;
+     transition-property: color;
+     opacity: calc(1);
+     translate: scale(x,y);
+     transition-duration: 250ms;
+     transform: scale(1);
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+.modal .contacts-title{
+  margin-right: auto;
+  font-weight: 600;
+font-size: 32px;
+color: #000;
+margin-bottom: 24px;
+}
+.modal .contacts-description{
+  margin-left: 15px;
+  font-weight: 500;
+font-size: 16px;
+color: #5c5c5c;
+margin-bottom: 32px;
+}
+.modal-label{
+  font-weight: 500;
+font-size: 14px;
+color: #5c5c5c;
+margin-bottom: 8px;
+}
+.modal-input{
+  display: flex;
+  border: 1px solid #d7d7d7;
+border-radius: 4px;
+width: 416px;
+height: 49px;
+margin-bottom: 24px;
+}
+.modal-input::placeholder{
+  
+  padding-left: 16px;
+font-weight: 500;
+font-size: 14px;
+color: rgba(0, 0, 0, 0.4);
+}
+.modal-button{
+  border-radius: 8px;
+  border: none;
+width: 416px;
+height: 50px;
+background-color: rgba(232, 111, 84, 0.4); 
+font-weight: 600;
+font-size: 18px;
+text-align: center;
+color: #fff;
+}
+.modal-button:hover{
+  background-color: $hover-color;
+
+}
+
